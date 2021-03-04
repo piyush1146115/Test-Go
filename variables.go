@@ -1,8 +1,6 @@
 package main
 
-import "fmt"
-
-func main() {
+func main2() {
 	//var x string = "Hello World"
 	//fmt.Println(x)
 
@@ -34,9 +32,11 @@ func main() {
 	//dogsName := "Max"
 	//fmt.Println("My dog's name is", dogsName)
 
-	fmt.Print("Enter a number: ")
-	var input float64
-	fmt.Scanf("%f", &input)
-	output := input * 2
-	fmt.Println(output)
+	//fmt.Print("Enter a number: ")
+	//var input float64
+	//fmt.Scanf("%f", &input)
+	//output := input * 2
+	//fmt.Println(output)
+
+
 }
