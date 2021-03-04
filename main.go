@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main1()  {
 	fmt.Println("Hello Go!")
 	fmt.Println("1 + 1 =", 1 + 1)
 	fmt.Println("1 + 1 =", 1.0 + 1.0)
