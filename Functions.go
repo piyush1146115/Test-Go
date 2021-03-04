@@ -28,7 +28,7 @@ func second() {
 	fmt.Println("2nd")
 }
 
-func main() {
+func main5() {
 	x := 0
 	//var y uint
 	//Closure
