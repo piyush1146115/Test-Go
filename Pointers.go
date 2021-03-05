@@ -10,7 +10,7 @@ func one(xPtr *int) {
 	*xPtr = 1
 }
 
-func main() {
+func main6() {
 	x := 5
 	zero(&x)
 	fmt.Println(x) // x is 0
