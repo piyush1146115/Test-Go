@@ -47,7 +47,7 @@ type Android struct {
 	Model string
 }
 
-func main(){
+func main7(){
 	c := Circle{x: 0, y: 0, r: 5}
 
 	//c := new(Circle)
