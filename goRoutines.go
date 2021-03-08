@@ -21,7 +21,7 @@ func alphabets() {
 		fmt.Printf("%c ", i)
 	}
 }
-func main(){
+func main8(){
 	go hello()
 	time.Sleep(1 * time.Second)
 	go numbers()

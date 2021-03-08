@@ -64,7 +64,7 @@ func producer(chnl chan int) {
 	close(chnl)
 }
 
-func main() {
+func main9() {
 	//a := make(chan int)
 	//var a chan int
 	//if a == nil {
