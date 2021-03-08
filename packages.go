@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func main() {
+func main10() {
 	// Finding the Max of two numbers
 	fmt.Println(math.Max(73.15, 92.46))
 
@@ -22,7 +22,7 @@ func main() {
 
 	// Phi is an exported name
 	fmt.Println("Value of Phi (ϕ): ", math.Phi)
-	
+
 	// Epoch time in milliseconds
 	epoch := time.Now().Unix()
 	fmt.Println(epoch)
