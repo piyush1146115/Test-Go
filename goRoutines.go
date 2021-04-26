@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func hello(){
+func hello() {
 	fmt.Println("Hello from GoRoutine")
 }
 
@@ -21,7 +21,7 @@ func alphabets() {
 		fmt.Printf("%c ", i)
 	}
 }
-func main8(){
+func main() {
 	go hello()
 	time.Sleep(1 * time.Second)
 	go numbers()
