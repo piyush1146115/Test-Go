@@ -18,7 +18,25 @@ import (
 //	// fmt.Println*("Bye") is now invoked, as we are at the end of the function scope
 //}
 
+func trace(s string) string {
+	fmt.Println("entering:", s)
+	return s
+}
 
+func un(s string) {
+	fmt.Println("leaving:", s)
+}
+
+func a() {
+	defer un(trace("a"))
+	fmt.Println("in a")
+}
+
+func b() {
+	defer un(trace("b"))
+	fmt.Println("in b")
+	a()
+}
 
 func main() {
 	if err := write("readme.txt", "This is a readme file from PK"); err != nil {
@@ -31,6 +49,12 @@ func main() {
 	defer fmt.Println("one")
 	defer fmt.Println("two")
 	defer fmt.Println("three")
+
+	for i := 0; i < 5; i++ {
+		defer fmt.Printf("%d ", i)
+	}
+
+	b()
 }
 
 func write(fileName string, text string) error {
@@ -49,7 +73,6 @@ func write(fileName string, text string) error {
 	//file.Close()
 	return nil
 }
-
 
 func fileCopy(source string, destination string) error {
 	src, err := os.Open(source)
