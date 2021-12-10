@@ -6,4 +6,5 @@ require (
 	github.com/evanphx/json-patch v0.5.2
 	github.com/google/go-cmp v0.5.6 // indirect
 	gomodules.xyz/envsubst v0.1.0
+	gorm.io/gorm v1.22.4
 )
